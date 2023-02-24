@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #2C3333;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    color: #E7F6F2;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+}
+
+.mnhding h1 {
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hdrlogo img {
+    filter: invert(1);
+    width: 90%;
+    padding: 0 85px 0 0;
+}
+
+.lgnbtn button {
+    padding: 10px 25px;
+    margin-right: 20px;
+    background-color: transparent;
+    border: 2px solid #E7F6F2;
+    color: #E7F6F2;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.lgnbtn button:hover {
+    background-color: #E7F6F2;
+    border: 2px solid #E7F6F2;
+    color: #2C3333;
+}
+
+.lgnbtn button:active {
+    border: 2px solid #2C3333;
+}
+
+.lgnbtn button:focus {
+    outline: 0;
+}
+
+.advrtse-bar {
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    grid-area: adv;
+    background-color: #395B64;
+    color: #E7F6F2;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3px 0;
+}
+
+.side-bar {
+    grid-area: sidebar;
+    background-color: #E7F6F2;
+    width: auto;
+    position: fixed;
+    height: 100%;
+    top: 87px;
+    width: 22%;
+}
+
+.side-bar li {
+    list-style-type: none;
+    width: 100%;
+    font-size: 18px;
+    /* margin: 5px 0; */
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #395B64;
+    transition: all 0.3s;
+}
+
+.side-bar li:hover {
+    background-color: #A5C9CA;
+    color: #2C3333;
+    cursor: pointer;
+}
+
+.side-bar li:active {
+    text-shadow: 0px 0px 10px #fff;
+}
+
+.side-bar .active li {
+    background-color: #A5C9CA;
+}
+
+.content {
+    grid-area: content;
+    background-color: #A5C9CA;
+}
+
+.admin-panel {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header header header'
+        'header header header header header header header header'
+        'adv adv adv adv adv adv adv adv'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content'
+        'sidebar content content content content content content content';
+    background-color: #A5C9CA;
+    width: 100%;
+    height: 100vh;
+}
